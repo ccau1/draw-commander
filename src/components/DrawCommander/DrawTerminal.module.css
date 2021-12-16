@@ -1,0 +1,61 @@
+.wrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #151515;
+}
+
+.history {
+  flex: 1;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+.history span {
+  display: block;
+  color: #a3a3a3;
+  min-height: 20px;
+}
+
+.terminalOutput {
+  position: relative;
+  padding: 3px 10px;
+}
+
+.terminalOutput.isUser::before {
+  content: "::";
+  color: #a3a3a3;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-top: -2px;
+}
+
+.history .terminalOutput:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  padding: 5px 5px;
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.inputWrapper span {
+  margin-top: -3px;
+}
